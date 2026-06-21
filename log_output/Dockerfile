@@ -1,5 +1,7 @@
 FROM golang:1.26 AS builder
 
+LABEL org.opencontainers.image.source=https://github.com/mossprune/KubernetesSubmissions
+
 WORKDIR /app
 COPY go.mod go.sum ./
 RUN go mod download
