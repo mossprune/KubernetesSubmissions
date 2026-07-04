@@ -23,3 +23,11 @@ go build -o todo_app .
 docker build -t todo_app .
 docker run -p 8080:8080 todo_app
 ```
+
+## Running in k3d
+
+```
+kubectl apply -f manifests/deployment.yaml
+kubectl get po
+kubectl logs todo-app-<STRING>
+```
