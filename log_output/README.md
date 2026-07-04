@@ -11,7 +11,7 @@ docker run ghcr.io/mossprune/log_output:1.1
 ## Running in k3d
 
 ```
-kubectl create deployment log-output  --image=ghcr.io/mossprune/log_output:1.1
+kubectl apply -f manifests/deployment.yaml
 kubectl get po
 kubectl logs log-output-<STRING>
 ```
